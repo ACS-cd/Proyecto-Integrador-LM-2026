@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos [
+  <!ELEMENT datos (persona*)>
+  <!ELEMENT persona (nombre, apellido, edad?)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apellido (#PCDATA)>
+  <!ELEMENT edad (#PCDATA)>
+]>
+<datos>
+  <persona>
+    <nombre>Juan</nombre>
+    <apellido>Perez</apellido>
+    <edad>30</edad>
+  </persona>
+</datos>
