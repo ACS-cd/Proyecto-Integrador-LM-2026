@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE datos [
-  <!ELEMENT datos (persona*)>
-  <!ELEMENT persona (nombre, apellido, edad?)>
-  <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT apellido (#PCDATA)>
-  <!ELEMENT edad (#PCDATA)>
-]>
+<!--Trabajadores, investigaciones, experimentos, etc-->
+<umbrella propietario="ACS-cd">
 <datos>
-  <persona>
-    <nombre>Juan</nombre>
-    <apellido>Perez</apellido>
-    <edad>30</edad>
-  </persona>
-</datos>
+  <trabajador id="J01">
+    <nombre>William</nombre>
+    <apellido>Birkin</apellido>
+    <puesto>Virólogo</puesto>
+  </trabajador>
+
+  <investigacion id="J02">
+    <equipo>Umbrella, rama norteamericana</equipo>
+    <resultados>15 (lúcido)-GCS 10; pérdida posterior de conciencia.</resultados>
+    <estado>Terminal</estado>
+  </investigacion>
+
+  <emperimento>
+    <prueba id="T-0400TP">Hunter</prueba>
+    <descripcion></descripcion>
+    <precio>5893.95</precio>
+  </emperimento>
+
+</datos>  
+</umbrella>
