@@ -7,18 +7,39 @@
     <apellido>Birkin</apellido>
     <puesto>Virólogo</puesto>
   </trabajador>
+  <trabajador id="J00">
+    <nombre>Spencer</nombre>
+    <apellido>Oswell E.</apellido>
+    <puesto>Fundador</puesto>
+  </trabajador>
+  <trabajador id="J02">
+    <nombre>James</nombre>
+    <apellido>Marcus</apellido>
+    <puesto>Co-Fundador</puesto>
+  </trabajador>
 
-  <investigacion id="J02">
-    <equipo>Umbrella, rama norteamericana</equipo>
-    <resultados>15 (lúcido)-GCS 10; pérdida posterior de conciencia.</resultados>
-    <estado>Terminal</estado>
+  <investigacion>
+    <equipo id="NEST">
+      <sede>Farmacéuticas Umbrella</sede>
+      <resultados>15 (lúcido)-GCS 10; pérdida posterior de conciencia.</resultados>
+      <estado>Terminal</estado> 
+    </equipo>
+    <equipo id="Paris">
+      <sede>Laboratorio de París</sede>
+      <resultados>Resultados cesados por redada en el laboratorio.</resultados>
+      <estado>Perdido</estado>
+    </equipo>
+    <equipo id="Arklay"></equipo>
+      <sede>Laboratorio Arklay</sede>
+      <resultados>Descubrimiento del virus progenitor.</resultados>
+      <estado>Continuidad y transformación hacia T-Virus</estado>
   </investigacion>
 
-  <emperimento>
+  <experimento>
     <prueba id="T-0400TP">Hunter</prueba>
     <descripcion></descripcion>
     <precio>5893.95</precio>
-  </emperimento>
+  </experimento>
 
 </datos>  
 </umbrella>
