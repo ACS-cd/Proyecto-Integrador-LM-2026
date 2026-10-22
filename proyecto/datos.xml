@@ -17,6 +17,11 @@
     <apellido>Marcus</apellido>
     <puesto>Co-Fundador</puesto>
   </trabajador>
+  <trabajador id="J03">
+    <nombre>Annette</nombre>
+    <apellido>Birkin</apellido>
+    <puesto>Socia de Investigación</puesto>
+    </trabajador>
 
   <investigacion>
     <equipo id="NEST">
