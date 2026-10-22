@@ -11,4 +11,10 @@ UD3 · Estructura HTML: document.compatMode devolvió CSS1Compat y significa que
 
 Faltan metadatos, páginas extras, bloques.
 
+| Fichero            | title                             | Qué contiene |
+| index.html         | Inicio    - Integrador-LM-2026    | Portada: presentación.
+| productos.html     | Productos - Integrador-LM-2026    | Lista de productos.
+| personal.html      | Personal  - Integrador-LM-2026    | Lista de personal.
+| contiene.html      | Contenido - Integrador-LM-2026    | Contenido del xml.
+
 Palabra del día: contexto (20-10-2026)
