@@ -11,10 +11,18 @@ UD3 · Estructura HTML: document.compatMode devolvió CSS1Compat y significa que
 
 Faltan metadatos, páginas extras, bloques.
 
-| Fichero            | title                             | Qué contiene |
-| index.html         | Inicio    - Integrador-LM-2026    | Portada: presentación.
-| productos.html     | Productos - Integrador-LM-2026    | Lista de productos.
-| personal.html      | Personal  - Integrador-LM-2026    | Lista de personal.
-| contiene.html      | Contenido - Integrador-LM-2026    | Contenido del xml.
+| Fichero            | title                          |Qué contiene |
+| index.html         | Inicio    - Integrador-LM-2026 | Portada: presentación.
+| productos.html     | Productos - Integrador-LM-2026 | Lista de productos.
+| personal.html      | Personal  - Integrador-LM-2026 | Lista de personal.
+| contiene.html      | Contenido - Integrador-LM-2026 | Contenido del xml.
 
 Palabra del día: contexto (20-10-2026)
+
+¿Qué he hecho en esta unidad?
+Completar los metadatos de mi web, añadir páginas extras con más información del tema y ordenar mejor los elementos dentro del body.
+
+| ERROR                                   |Arreglo                   
+| Usar ol en vez il dentro de un ul       |   Cambiar ol por il en la lista del personal.
+| Etiquetas sin cerrar o sobrantes        | Eliminar dichas etiquetas dentro de la página de historia.  (Lineas 26-28)   
+| doble body                              | Eliminar la etiqueta de body duplicada   
