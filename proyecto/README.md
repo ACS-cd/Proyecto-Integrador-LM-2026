@@ -15,11 +15,11 @@ Mapa del sitio
 
 | Fichero            | title                          |Qué contiene |
 | index.html         | Inicio    - Integrador-LM-2026 | Portada: presentación.
-| historia.html      | Historia - Integrador-LM-2026  | Historiia de la Corporación Umbrella.
+| historia.html      | Historia - Integrador-LM-2026  | Historia de la Corporación Umbrella.
 | personal.html      | Personal  - Integrador-LM-2026 | Lista de personal.
 | contiene.html      | Contenido - Integrador-LM-2026 | Contenido del xml.
 
-Palabra del día: contexto (20-10-2026)
+Palabra del día: día
 
 ¿Qué he hecho en esta unidad?
 Completar los metadatos de mi web, añadir páginas extras con más información del tema y ordenar mejor los elementos dentro del body.
