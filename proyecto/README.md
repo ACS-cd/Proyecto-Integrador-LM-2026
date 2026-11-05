@@ -18,6 +18,7 @@ Mapa del sitio
 | historia.html      | Historia - Integrador-LM-2026  | Historia de la Corporación Umbrella.
 | personal.html      | Personal  - Integrador-LM-2026 | Lista de personal.
 | contiene.html      | Contenido - Integrador-LM-2026 | Contenido del xml.
+| contacto.html      | Contenido - Integrador-LM-2026 | Formulario de contacto para consultas.
 
 Palabra del día: día
 
@@ -33,4 +34,4 @@ UD5 · Tablas y formularios
 
 Tabla: Dentro de mi tabla se reflejarán los datos de transformación y ramas dentro de la Corporación Umbrella a lo largo de su historia.
 
-Formulario: Forma de contacto cliente-empresa para agenciar una cita telefónica.
+Formulario: Forma de contacto cliente-empresa para agenciar una cita telefónica. Para el formulario utilizo el método post en vez de get porque los datos a recopilar son privados y no debem verse.
