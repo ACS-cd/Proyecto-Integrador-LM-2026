@@ -23,8 +23,40 @@
             
             <label for="correo">Correo</label>    
             <input type="email" id="correo"
-                name="coreo" required>
+                name="coreo" required>    
         </form>    
+        </fieldset>
+        <fieldset>
+            <legend>División</legend>
+            <label for="divi"></label>
+            <select id="divi" name="divi">
+                <option value="ubcs">U.B.C.S</option>
+                <option value="white">White Umbrella</option>
+                <option value="uss">U.S.S</option>
+                <option value="neo">Neo-Umbrella</option>
+                <option value="red">Red Umbrella</option>
+                <option value="line">Umbrella Line Company</option>
+                <option value="priv">Umbrella PrivSol</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Asunto</legend>
+            <label for="asu"></label>
+            <textarea id="asu" name="asu"
+                rows="1" cols="40"
+                minlength="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mensaje</legend>
+            <label for="msg"></label>
+            <textarea id="msg" name="msg"
+                rows="10" cols="40"
+                minlength="10"></textarea>
+            <input type="con" id="r1"
+                name="condiciones" value="He leído y acepto las condiciones" checked>
+            <label for="r1"></label>
+            
+    
         </fieldset>
     </div> 
 </body>
