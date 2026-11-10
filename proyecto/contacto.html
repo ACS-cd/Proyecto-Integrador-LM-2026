@@ -1,62 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Personal  - Integrador-LM-2026</title> <!--Ángela Colorado Sousa 08-10-2026 -->
-    <meta name="description" content="Página de contacto.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de contacto - Umbrella Corporation</title>
+    <!-- Ángela Colorado Sousa 08-10-2026 -->
+    <meta name="description" content="Formulario de contacto de Umbrella Corporation.">
     <meta name="keywords" content="farmacéutica, Umbrella, Corporación, contacto">
     <meta name="author" content="Angela Colorado Sousa">
-</head>  
+</head>
 
 <body>
-    <h1>Centro de contacto</h1>
-    <!--Contenedorpara el formulario-->
+
+    <h1>Centro de contacto - Umbrella Corporation</h1>
     <div>
         <form action="#" method="post">
-        <fieldset>
-            <legend>Formulario</legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre"
-                name="nombre" required
-                maxlength="10" autofocus>
-            
-            <label for="correo">Correo</label>    
-            <input type="email" id="correo"
-                name="coreo" required>    
-        </form>    
-        </fieldset>
-        <fieldset>
-            <legend>División</legend>
-            <label for="divi"></label>
-            <select id="divi" name="divi">
-                <option value="ubcs">U.B.C.S</option>
-                <option value="white">White Umbrella</option>
-                <option value="uss">U.S.S</option>
-                <option value="neo">Neo-Umbrella</option>
-                <option value="red">Red Umbrella</option>
-                <option value="line">Umbrella Line Company</option>
-                <option value="priv">Umbrella PrivSol</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Asunto</legend>
-            <label for="asu"></label>
-            <textarea id="asu" name="asu"
-                rows="1" cols="40"
-                minlength="5"></textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Mensaje</legend>
-            <label for="msg"></label>
-            <textarea id="msg" name="msg"
-                rows="10" cols="40"
-                minlength="10"></textarea>
-            <input type="con" id="r1"
-                name="condiciones" value="He leído y acepto las condiciones" checked>
-            <label for="r1"></label>
-            
-    
-        </fieldset>
-    </div> 
+            <fieldset>
+                <legend>Tus datos</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre"
+                    name="nombre"
+                    maxlength="30"
+                    placeholder="Escribe tu nombre"
+                    required autofocus>
+
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo"
+                    name="correo"
+                    minlength="10"
+                    placeholder="ejemplo@umbrella.com"
+                    required>
+
+                <br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono"
+                    name="telefono">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>División</legend>
+
+                <label for="divi">Selecciona tu división:</label>
+
+                <select id="divi" name="divi" required>
+                    <option value="ubcs" selected>U.B.C.S</option>
+                    <option value="white">White Umbrella</option>
+                    <option value="uss">U.S.S</option>
+                    <option value="neo">Neo-Umbrella</option>
+                    <option value="red">Red Umbrella</option>
+                    <option value="line">Umbrella Line Company</option>
+                    <option value="priv">Umbrella PrivSol</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de consulta</legend>
+
+                <input type="radio" id="incidencia"
+                    name="tipo_consulta" value="incidencia" checked>
+                <label for="incidencia">Informar de una incidencia</label>
+
+                <br>
+
+                <input type="radio" id="investigacion"
+                    name="tipo_consulta" value="investigacion">
+                <label for="investigacion">Investigación científica</label>
+
+                <br>
+
+                <input type="radio" id="empleo"
+                    name="tipo_consulta" value="empleo">
+                <label for="empleo">Solicitud de empleo</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Servicios de interés</legend>
+
+                <input type="checkbox" id="farmacia"
+                    name="servicios" value="farmacia" checked>
+                <label for="farmacia">Productos farmacéuticos</label>
+
+                <br>
+
+                <input type="checkbox" id="biotecnologia"
+                    name="servicios" value="biotecnologia">
+                <label for="biotecnologia">Investigación biotecnológica</label>
+
+                <br>
+
+                <input type="checkbox" id="seguridad"
+                    name="servicios" value="seguridad">
+                <label for="seguridad">Seguridad y protección</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu consulta</legend>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto"
+                    name="asunto"
+                    minlength="5"
+                    maxlength="80"
+                    placeholder="Escribe el asunto"
+                    required>
+
+                <br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <br>
+
+                <textarea id="mensaje"
+                    name="mensaje"
+                    rows="10"
+                    cols="40"
+                    minlength="10"
+                    maxlength="500"></textarea>
+
+                <br><br>
+
+                <input type="checkbox" id="condiciones"
+                    name="condiciones"
+                    value="aceptadas"
+                    required>
+
+                <label for="condiciones">
+                    He leído y acepto las condiciones.
+                </label>
+
+            </fieldset>
+
+            <div>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Borrar formulario</button>
+            </div>
+        </form>
+    </div>
+
 </body>
+</html>

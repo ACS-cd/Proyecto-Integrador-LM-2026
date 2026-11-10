@@ -35,3 +35,4 @@ UD5 · Tablas y formularios
 Tabla: Dentro de mi tabla se reflejarán los datos de transformación y ramas dentro de la Corporación Umbrella a lo largo de su historia.
 
 Formulario: Forma de contacto cliente-empresa para agenciar una cita telefónica. Para el formulario utilizo el método post en vez de get porque los datos a recopilar son privados y no debem verse.
+URL de envío con get: http://127.0.0.1:5501/proyecto/contacto.html?nombre=Angela&correo=acscd%40gmail.com&telefono=239348492234&divi=ubcs&tipo_consulta=empleo&servicios=farmacia&servicios=seguridad&asunto=CV+-+Ciberseguridad&mensaje=Adjunto+mi+cv+para+poder+trabajar+en+la+empresa.&condiciones=aceptadas#
