@@ -5,159 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro de contacto - Umbrella Corporation</title>
-    <!-- Ángela Colorado Sousa 08-10-2026 -->
     <meta name="description" content="Formulario de contacto de Umbrella Corporation.">
     <meta name="keywords" content="farmacéutica, Umbrella, Corporación, contacto">
     <meta name="author" content="ACS-cd">
 </head>
 
 <body>
-    <header><img src="img/logo_umbrella.png" alt="el logo de la Corporación Umbrella, una estructura dividida en partes rojas y blancas" width="100">
-    <h1>Umbrella Corporation</h1>
+    <header>
+        <img src="img/logo_umbrella.png" alt="el logo de la Corporación Umbrella, una estructura dividida en partes rojas y blancas" width="100">
+        <h1>Umbrella Corporation</h1>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="personal.html">Personal</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="contiene.html">Contiene</a></li>
-      </ul>
-     </nav>
-  </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contiene.html">Contiene</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Centro de contacto - Umbrella Corporation</h1>
-    <div>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Tus datos</legend>
+    <main>
+        <h2>Centro de contacto - Umbrella Corporation</h2>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre"
-                    name="nombre"
-                    maxlength="30"
-                    placeholder="Escribe tu nombre"
-                    required autofocus>
+        <section>
+            <h3>Antes de escribir</h3>
 
-                <br><br>
+            <article>
+                <h4>Referencia de empleado</h4>
+                <p>Si trabajas en Umbrella, indica tu referencia con el formato UMB-0000 (las letras UMB, un guion y 4 dígitos).</p>
+            </article>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo"
-                    name="correo"
-                    minlength="10"
-                    placeholder="ejemplo@umbrella.com"
-                    required>
+            <article>
+                <h4>Incidencias urgentes</h4>
+                <p>Usa el selector de urgencia y la fecha y hora de los hechos para que podamos priorizar tu aviso.</p>
+            </article>
+        </section>
 
-                <br><br>
+        <section>
+            <h3>Formulario de contacto</h3>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono"
-                    name="telefono">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
 
-            </fieldset>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre"
+                        name="nombre"
+                        maxlength="30"
+                        placeholder="Escribe tu nombre"
+                        required autofocus>
 
-            <fieldset>
-                <legend>División</legend>
+                    <br><br>
 
-                <label for="divi">Selecciona tu división:</label>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo"
+                        name="correo"
+                        minlength="10"
+                        placeholder="ejemplo@umbrella.com"
+                        required>
 
-                <select id="divi" name="divi" required>
-                    <option value="" selected>...</option>
-                    <option value="ubcs">U.B.C.S</option>
-                    <option value="white">White Umbrella</option>
-                    <option value="uss">U.S.S</option>
-                    <option value="neo">Neo-Umbrella</option>
-                    <option value="red">Red Umbrella</option>
-                    <option value="line">Umbrella Line Company</option>
-                    <option value="priv">Umbrella PrivSol</option>
-                </select>
+                    <br><br>
 
-            </fieldset>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono"
+                        name="telefono"
+                        placeholder="(000) 000-0000"
+                        required>
 
-            <fieldset>
-                <legend>Tipo de consulta</legend>
+                    <br><br>
+                    
+                    <label for="referencia">Referencia de empleado (opcional):</label>
+                    <input type="text" id="referencia" name="referencia"
+                        pattern="UMB-[0-9]{4}"
+                        title="Formato de la referencia: las letras UMB, un guion y 4 dígitos (por ejemplo, UMB-0451)."
+                        placeholder="UMB-0451">
 
-                <input type="radio" id="incidencia"
-                    name="tipo_consulta" value="incidencia" checked>
-                <label for="incidencia">Informar de una incidencia</label>
+                    <br><br>
 
-                <br>
+                </fieldset>
 
-                <input type="radio" id="investigacion"
-                    name="tipo_consulta" value="investigacion">
-                <label for="investigacion">Investigación científica</label>
+                <fieldset>
+                    <legend>División</legend>
 
-                <br>
+                    <label for="divi">Selecciona tu división:</label>
 
-                <input type="radio" id="empleo"
-                    name="tipo_consulta" value="empleo">
-                <label for="empleo">Solicitud de empleo</label>
+                    <select id="divi" name="divi" required>
+                        <option value="" selected>...</option>
+                        <option value="ubcs">U.B.C.S</option>
+                        <option value="white">White Umbrella</option>
+                        <option value="uss">U.S.S</option>
+                        <option value="neo">Neo-Umbrella</option>
+                        <option value="red">Red Umbrella</option>
+                        <option value="line">Umbrella Line Company</option>
+                        <option value="priv">Umbrella PrivSol</option>
+                    </select>
 
-            </fieldset>
+                    <br><br>
+                    <label for="color">Color de tu pase de acceso:</label>
+                    <input type="color" id="color" name="color" value="#cc0000">
+                </fieldset>
 
-            <fieldset>
-                <legend>Servicios de interés</legend>
+                <fieldset>
+                    <legend>Tipo de consulta</legend>
 
-                <input type="checkbox" id="farmacia"
-                    name="servicios" value="farmacia" checked>
-                <label for="farmacia">Productos farmacéuticos</label>
+                    <input type="radio" id="incidencia"
+                        name="tipo_consulta" value="incidencia" checked>
+                    <label for="incidencia">Informar de una incidencia</label>
 
-                <br>
+                    <br>
 
-                <input type="checkbox" id="biotecnologia"
-                    name="servicios" value="biotecnologia">
-                <label for="biotecnologia">Investigación biotecnológica</label>
+                    <input type="radio" id="investigacion"
+                        name="tipo_consulta" value="investigacion">
+                    <label for="investigacion">Investigación científica</label>
 
-                <br>
+                    <br>
 
-                <input type="checkbox" id="seguridad"
-                    name="servicios" value="seguridad">
-                <label for="seguridad">Seguridad y protección</label>
+                    <input type="radio" id="empleo"
+                        name="tipo_consulta" value="empleo">
+                    <label for="empleo">Solicitud de empleo</label>
 
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Tu consulta</legend>
+                <fieldset>
+                    <legend>Detalles de la incidencia</legend>
 
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto"
-                    name="asunto"
-                    minlength="5"
-                    maxlength="80"
-                    placeholder="Escribe el asunto"
-                    required>
+                    <label for="fecha">Fecha de los hechos:</label>
+                    <input type="date" id="fecha" name="fecha"
+                        min="1968-01-01" max="2026-12-31">
 
-                <br><br>
+                    <br><br>
 
-                <label for="mensaje">Mensaje:</label>
-                <br>
+                    <label for="hora">Hora aproximada:</label>
+                    <input type="time" id="hora" name="hora">
 
-                <textarea id="mensaje"
-                    name="mensaje"
-                    rows="10"
-                    cols="40"
-                    minlength="10"
-                    maxlength="500"></textarea>
+                    <br><br>
 
-                <br><br>
+                    <label for="afectados">Personas afectadas:</label>
+                    <input type="number" id="afectados" name="afectados"
+                        min="0" max="500" step="1" value="0"
+                        placeholder="0">
 
-                <input type="checkbox" id="condiciones"
-                    name="condiciones"
-                    value="aceptadas"
-                    required>
+                    <br><br>
 
-                <label for="condiciones">
-                    He leído y acepto las condiciones.
-                </label>
+                    <label for="urgencia">Nivel de urgencia (1 = baja, 5 = crítica):</label>
+                    <input type="range" id="urgencia" name="urgencia"
+                        min="1" max="5" step="1" value="3">
+                </fieldset>
 
-            </fieldset>
+                <fieldset>
+                    <legend>Servicios de interés</legend>
 
-            <div>
-                <button type="submit">Enviar formulario</button>
-                <button type="reset">Borrar formulario</button>
-            </div>
-        </form>
-    </div>
+                    <input type="checkbox" id="farmacia"
+                        name="servicios" value="farmacia" checked>
+                    <label for="farmacia">Productos farmacéuticos</label>
+
+                    <br>
+
+                    <input type="checkbox" id="biotecnologia"
+                        name="servicios" value="biotecnologia">
+                    <label for="biotecnologia">Investigación biotecnológica</label>
+
+                    <br>
+
+                    <input type="checkbox" id="seguridad"
+                        name="servicios" value="seguridad">
+                    <label for="seguridad">Seguridad y protección</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu consulta</legend>
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto"
+                        name="asunto"
+                        minlength="5"
+                        maxlength="80"
+                        placeholder="Escribe el asunto"
+                        required>
+
+                    <br><br>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+
+                    <textarea id="mensaje"
+                        name="mensaje"
+                        rows="10"
+                        cols="40"
+                        minlength="10"
+                        maxlength="500">
+                    </textarea>
+
+                    <br><br>
+
+                    <input type="checkbox" id="condiciones"
+                        name="condiciones"
+                        value="aceptadas"
+                        required>
+
+                    <label for="condiciones">
+                        He leído y acepto las condiciones.
+                    </label>
+
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Borrar formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Estado del centro de contacto</h2>
+        <label for="aforo">Operadores disponibles (35 de 50):</label>
+        <meter id="aforo" min="0" max="50" low="10" high="40" optimum="50" value="35">35 de 50</meter>
+    </aside>
 
 </body>
 </html>
